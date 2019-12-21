@@ -58,7 +58,7 @@ const TemplateWrapper = ({ children }) => (
           />
           <ul className="sidebar__menu">
             <li>
-              <Link to="/">Inicio</Link>
+              <Link to="/">Inicio vBeta</Link>
             </li>
             <li>
               <Link to="/about">Sobre mim</Link>
