@@ -7,22 +7,24 @@ import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
+import { createMuiTheme } from '@material-ui/core/styles';
 
 
 import '../styles/index.sass'
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <MuiLink color="inherit" href="https://material-ui.com/">
-        Your Website
-      </MuiLink>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+const theme = createMuiTheme({
+  typography: {
+    useNextVariants: true,
+  },
+  palette: {
+    primary: {
+      light: '#63ccff',
+      main: '#009be5',
+      dark: '#006db3',
+      contrastText: '#fff',
+    },
+  },
+});
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery query={graphql`
@@ -67,7 +69,7 @@ const TemplateWrapper = ({ children }) => (
       />
       <div className="sidebar__title">
 
-             <AppBar position="static" color="purple">
+             <AppBar position="static" backgroundColor="purple">
                  <Toolbar>
                      <Typography variant="title" color="inherit">
                       Aquaryu

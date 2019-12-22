@@ -1,6 +1,6 @@
 {
-  "name": "aquaryu website",
-  "description": "aquaryu website",
+  "name": "gatsby-datocms-demo",
+  "description": "aquaryu-website",
   "version": "1.0.0",
   "author": "Cleber Dantas",
   "dependencies": {
