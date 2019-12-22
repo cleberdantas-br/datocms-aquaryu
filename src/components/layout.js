@@ -59,50 +59,55 @@ const TemplateWrapper = ({ children }) => (
   `}
   render={data => (
 
+    <div>
+           <AppBar position="static">
+               <Toolbar>
+                   <Typography variant="title" color="inherit">
+                   React & Material-UI Sample Application
+                   </Typography>
+               </Toolbar>
+           </AppBar>
+
 
     <div className="container">
       <HelmetDatoCms
         favicon={data.datoCmsSite.faviconMetaTags}
         seo={data.datoCmsHome.seoMetaTags}
       />
-      <div>
-             <AppBar position="static">
-                 <Toolbar>
-                     <Typography variant="title" color="inherit">
-                     React & Material-UI Sample Application
-                     </Typography>
-                 </Toolbar>
-             </AppBar>
-
-             <div className="container__sidebar">
-               <div className="sidebar">
-                 <h6 className="sidebar__title">
-                   <Link to="/">{data.datoCmsSite.globalSeo.siteName}</Link>
-                 </h6>
-
-             <div className="container__body">
-               <div className="container__mobile-header">
-                 <div className="mobile-header">
-                   <div className="mobile-header__menu">
-                     <Link to="#" data-js="toggleSidebar" />
-                   </div>
-                   <div className="mobile-header__logo">
-                     <Link to="/">{data.datoCmsSite.globalSeo.siteName}</Link>
-                   </div>
-                 </div>
-               </div>
-               {children}
-             </div>        
 
 
+
+      <div className="container__sidebar">
+        <div className="sidebar">
+          <h6 className="sidebar__title">
+            <Link to="/">{data.datoCmsSite.globalSeo.siteName}</Link>
+          </h6>
+          <div
+            className="sidebar__intro"
+            dangerouslySetInnerHTML={{
+              __html: data.datoCmsHome.introTextNode.childMarkdownRemark.html,
+            }}
+          />
 
       </div>
-
-
-
+      <div className="container__body">
+        <div className="container__mobile-header">
+          <div className="mobile-header">
+            <div className="mobile-header__menu">
+              <Link to="#" data-js="toggleSidebar" />
+            </div>
+            <div className="mobile-header__logo">
+              <Link to="/">{data.datoCmsSite.globalSeo.siteName}</Link>
+            </div>
+          </div>
+        </div>
+        {children}
+      </div>
     </div>
     )}
   />
+  </div>
+
 )
 
 TemplateWrapper.propTypes = {
