@@ -67,7 +67,7 @@ const TemplateWrapper = ({ children }) => (
       />
       <div className="sidebar__title">
 
-             <AppBar position="static" color="#510c76">
+             <AppBar position="static" color="purple">
                  <Toolbar>
                      <Typography variant="title" color="inherit">
                       Aquaryu
