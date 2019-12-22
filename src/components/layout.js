@@ -59,22 +59,23 @@ const TemplateWrapper = ({ children }) => (
   `}
   render={data => (
 
-    <div>
-           <AppBar position="static">
-               <Toolbar>
-                   <Typography variant="title" color="inherit">
-                   React & Material-UI Sample Application
-                   </Typography>
-               </Toolbar>
-           </AppBar>
-
 
     <div className="container">
       <HelmetDatoCms
         favicon={data.datoCmsSite.faviconMetaTags}
         seo={data.datoCmsHome.seoMetaTags}
       />
+      <div>
+             <AppBar position="static">
+                 <Toolbar>
+                     <Typography variant="title" color="inherit">
+                     React & Material-UI Sample Application
+                     </Typography>
+                 </Toolbar>
+             </AppBar>
 
+
+             </div>
 
 
       <div className="container__sidebar">
@@ -106,8 +107,6 @@ const TemplateWrapper = ({ children }) => (
     </div>
     )}
   />
-  </div>
-
 )
 
 TemplateWrapper.propTypes = {
