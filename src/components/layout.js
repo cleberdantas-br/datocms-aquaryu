@@ -65,8 +65,8 @@ const TemplateWrapper = ({ children }) => (
         favicon={data.datoCmsSite.faviconMetaTags}
         seo={data.datoCmsHome.seoMetaTags}
       />
-      <div className="container__sidebar">
-      
+      <div className="sidebar__title">
+
              <AppBar position="static">
                  <Toolbar>
                      <Typography variant="title" color="inherit">
