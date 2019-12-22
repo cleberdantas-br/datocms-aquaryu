@@ -3,8 +3,27 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { StaticQuery, graphql } from "gatsby"
 import { HelmetDatoCms } from 'gatsby-source-datocms'
+import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+import MuiLink from '@material-ui/core/Link';
+
+
 
 import '../styles/index.sass'
+
+function Copyright() {
+  return (
+    <Typography variant="body2" color="textSecondary" align="center">
+      {'Copyright © '}
+      <MuiLink color="inherit" href="https://material-ui.com/">
+        Your Website
+      </MuiLink>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+}
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery query={graphql`
@@ -67,6 +86,7 @@ const TemplateWrapper = ({ children }) => (
       <div id="test4" class="col s12">Test 4</div>
 
 
+
     <div className="container">
       <HelmetDatoCms
         favicon={data.datoCmsSite.faviconMetaTags}
@@ -85,6 +105,18 @@ const TemplateWrapper = ({ children }) => (
           />
           <ul className="sidebar__menu">
             <li>
+            <Container maxWidth="sm">
+                 <Box my={4}>
+                   <Typography variant="h4" component="h1" gutterBottom>
+                     Gatsby v4-beta example
+                   </Typography>
+                   <Link to="/about" color="secondary">
+                     Go to the about page
+                   </Link>
+                   <ProTip />
+                   <Copyright />
+                 </Box>
+               </Container>
               <Link to="/">Inicio vBeta</Link>
             </li>
             <li>
