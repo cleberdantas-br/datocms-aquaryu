@@ -4,7 +4,9 @@ import { Link } from 'gatsby'
 import { StaticQuery, graphql } from "gatsby"
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Button from '@material-ui/core/Button';
-
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
 
 
 import '../styles/index.sass'
@@ -63,6 +65,17 @@ const TemplateWrapper = ({ children }) => (
         favicon={data.datoCmsSite.faviconMetaTags}
         seo={data.datoCmsHome.seoMetaTags}
       />
+      <div>
+             <AppBar position="static">
+                 <Toolbar>
+                     <Typography variant="title" color="inherit">
+                     React & Material-UI Sample Application
+                     </Typography>
+                 </Toolbar>
+             </AppBar>
+             </div>
+
+
       <div className="container__sidebar">
         <div className="sidebar">
           <h6 className="sidebar__title">
