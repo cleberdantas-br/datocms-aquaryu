@@ -77,20 +77,7 @@ const TemplateWrapper = ({ children }) => (
 
 
       <div className="container__sidebar">
-        <div className="sidebar">
-          <h6 className="sidebar__title">
-            <Link to="/">{data.datoCmsSite.globalSeo.siteName}</Link>
-          </h6>
-          <div
-            className="sidebar__intro"
-            dangerouslySetInnerHTML={{
-              __html: data.datoCmsHome.introTextNode.childMarkdownRemark.html,
-            }}
-          />
-
         
-        </div>
-      </div>
       <div className="container__body">
         <div className="container__mobile-header">
           <div className="mobile-header">
