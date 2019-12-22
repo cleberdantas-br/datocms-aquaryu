@@ -73,8 +73,6 @@ const TemplateWrapper = ({ children }) => (
                      </Typography>
                  </Toolbar>
              </AppBar>
-
-
              </div>
 
 
@@ -90,6 +88,8 @@ const TemplateWrapper = ({ children }) => (
             }}
           />
 
+        
+        </div>
       </div>
       <div className="container__body">
         <div className="container__mobile-header">
