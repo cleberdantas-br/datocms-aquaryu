@@ -77,7 +77,7 @@ const TemplateWrapper = ({ children }) => (
 
 
       <div className="container__sidebar">
-        
+      </div>
       <div className="container__body">
         <div className="container__mobile-header">
           <div className="mobile-header">
