@@ -67,11 +67,11 @@ const TemplateWrapper = ({ children }) => (
       />
       <div className="sidebar__title">
 
-             <AppBar position="static">
+             <AppBar position="static" color="#510c76">
                  <Toolbar>
                      <Typography variant="title" color="inherit">
-                     React & Material-UI Sample Application
-                     </Typography>
+                      Aquaryu
+                      </Typography>
                  </Toolbar>
              </AppBar>
 
