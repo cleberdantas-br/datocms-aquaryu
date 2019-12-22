@@ -7,24 +7,11 @@ import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
-import { createMuiTheme } from '@material-ui/core/styles';
+
 
 
 import '../styles/index.sass'
 
-const theme = createMuiTheme({
-  typography: {
-    useNextVariants: true,
-  },
-  palette: {
-    primary: {
-      light: '#63ccff',
-      main: '#009be5',
-      dark: '#006db3',
-      contrastText: '#fff',
-    },
-  },
-});
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery query={graphql`
@@ -69,7 +56,7 @@ const TemplateWrapper = ({ children }) => (
       />
       <div className="sidebar__title">
 
-             <AppBar position="static" backgroundColor="purple">
+             <AppBar position="static" background-color="#510c76">
                  <Toolbar>
                      <Typography variant="title" color="inherit">
                       Aquaryu
