@@ -57,19 +57,17 @@ const TemplateWrapper = ({ children }) => (
       />
       <div className="sidebar__title">
              <AppBar position="static" style={{ backgroundColor: '#510c76' }} >
+
                  <Toolbar>
+                 <IconButton edge="start" color="inherit" aria-label="menu">
+                    <MenuIcon />
+                </IconButton>
                      <Typography variant="title" color="inherit">
                       Aquaryu
                       </Typography>
+                      <Button color="inherit">Login</Button>
                  </Toolbar>
-                 <Menu
-                   id="menu-appbar"
-                   transformOrigin={{ vertical: "top", horizontal: "center" }}
 
-                 >
-                 <MenuItem >Profile</MenuItem>
-                 <MenuItem >My account</MenuItem>
-               </Menu>
              </AppBar>
 
 
