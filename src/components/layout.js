@@ -7,8 +7,6 @@ import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import theme from '../components/theme';
 
 import '../styles/index.sass'
 
@@ -55,15 +53,14 @@ const TemplateWrapper = ({ children }) => (
         seo={data.datoCmsHome.seoMetaTags}
       />
       <div className="sidebar__title">
-  <MuiThemeProvider theme={theme}>
-             <AppBar position="static" color="inherit">
+             <AppBar position="static" style={{ backgroundColor: '#2196F3' }} >
                  <Toolbar>
                      <Typography variant="title" color="inherit">
                       Aquaryu
                       </Typography>
                  </Toolbar>
              </AppBar>
-</MuiThemeProvider>
+
 
       <div className="container__body">
         <div className="container__mobile-header">
