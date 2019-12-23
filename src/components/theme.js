@@ -1,11 +1,14 @@
 import { createMuiTheme } from '@material-ui/styles';
-import indigo from '@material-ui/colors/indigo';
-import pink from '@material-ui/colors/pink';
-import red from '@material-ui/colors/red';
+import MuiThemeProvider from '@material-ui/styles/MuiThemeProvider';
+import * as Colors from '@material-ui/styles/colors';
 
 export default createMuiTheme({
   palette: {
-    primary: pink,
-    secondary: indigo // Indigo is probably a good match with pink
+    textColor: Colors.darkBlack,
+    primary1Color: Colors.white,
+    primary2Color: Colors.indigo700,
+    accent1Color: Colors.redA200,
+    pickerHeaderColor: Colors.darkBlack,
+    alternateTextColor: Colors.redA200
   }
 });
