@@ -59,6 +59,19 @@ const TemplateWrapper = ({ children }) => (
                       Aquaryu
                       </Typography>
                  </Toolbar>
+                 <Menu
+                   id="menu-appbar"
+                   anchorEl={anchorEl}
+                   getContentAnchorEl={null}
+                   anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+                   transformOrigin={{ vertical: "top", horizontal: "center" }}
+                   open={open}
+                   onClose={this.handleClose}
+                   className={props.classes.menu}
+                 >
+                 <MenuItem onClick={this.handleClose}>Profile</MenuItem>
+                 <MenuItem onClick={this.handleClose}>My account</MenuItem>
+               </Menu>
              </AppBar>
 
 
