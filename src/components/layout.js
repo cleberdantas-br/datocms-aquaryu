@@ -53,7 +53,7 @@ const TemplateWrapper = ({ children }) => (
         seo={data.datoCmsHome.seoMetaTags}
       />
       <div className="sidebar__title">
-             <AppBar position="static" style={{ backgroundColor: '#2196F3' }} >
+             <AppBar position="static" style={{ backgroundColor: '#510c76' }} >
                  <Toolbar>
                      <Typography variant="title" color="inherit">
                       Aquaryu
