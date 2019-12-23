@@ -62,9 +62,6 @@ const TemplateWrapper = ({ children }) => (
                  </Toolbar>
                  <Menu
                    id="menu-appbar"
-                   anchorEl={anchorEl}
-                   getContentAnchorEl={null}
-                   anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
                    transformOrigin={{ vertical: "top", horizontal: "center" }}
                    open={open}
                    onClose={this.handleClose}
