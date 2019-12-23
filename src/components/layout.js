@@ -7,28 +7,10 @@ import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
-import { createMuiTheme } from '@material-ui/core/styles';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import theme from 'theme';
+
 import '../styles/index.sass'
-
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      // light: will be calculated from palette.primary.main,
-      main: '#ff4400',
-      // dark: will be calculated from palette.primary.main,
-      // contrastText: will be calculated to contrast with palette.primary.main
-    },
-    secondary: {
-      light: '#0066ff',
-      main: '#0044ff',
-      // dark: will be calculated from palette.secondary.main,
-      contrastText: '#ffcc00',
-    },
-    // error: will use the default color
-  },
-});
-
-
 
 
 const TemplateWrapper = ({ children }) => (
@@ -73,15 +55,15 @@ const TemplateWrapper = ({ children }) => (
         seo={data.datoCmsHome.seoMetaTags}
       />
       <div className="sidebar__title">
-
-             <AppBar position="static" background-color="#510c76">
+  <MuiThemeProvider theme={theme}>
+             <AppBar position="static" color="inherit">
                  <Toolbar>
                      <Typography variant="title" color="inherit">
                       Aquaryu
                       </Typography>
                  </Toolbar>
              </AppBar>
-
+</MuiThemeProvider>
 
       <div className="container__body">
         <div className="container__mobile-header">
