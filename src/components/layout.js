@@ -67,8 +67,8 @@ const TemplateWrapper = ({ children }) => (
                    transformOrigin={{ vertical: "top", horizontal: "center" }}
 
                  >
-                 <MenuItem onClick={this.handleClose}>Profile</MenuItem>
-                 <MenuItem onClick={this.handleClose}>My account</MenuItem>
+                 <MenuItem >Profile</MenuItem>
+                 <MenuItem >My account</MenuItem>
                </Menu>
              </AppBar>
 
