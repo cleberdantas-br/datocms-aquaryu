@@ -8,6 +8,8 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import Menu from '@material-ui/core/Menu'
+import MenuItem from '@material-ui/core/MenuItem';
+
 
 import '../styles/index.sass'
 
@@ -63,7 +65,7 @@ const TemplateWrapper = ({ children }) => (
                  <Menu
                    id="menu-appbar"
                    transformOrigin={{ vertical: "top", horizontal: "center" }}
-                   
+
                  >
                  <MenuItem onClick={this.handleClose}>Profile</MenuItem>
                  <MenuItem onClick={this.handleClose}>My account</MenuItem>
