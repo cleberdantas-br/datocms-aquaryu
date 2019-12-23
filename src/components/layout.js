@@ -3,10 +3,11 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { StaticQuery, graphql } from "gatsby"
 import { HelmetDatoCms } from 'gatsby-source-datocms'
-import Button from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
+import Menu from '@material-ui/core/Menu'
 
 import '../styles/index.sass'
 
