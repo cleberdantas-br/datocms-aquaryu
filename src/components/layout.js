@@ -8,7 +8,7 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import theme from 'theme';
+import theme from '../components/theme';
 
 import '../styles/index.sass'
 
