@@ -62,9 +62,7 @@ const TemplateWrapper = ({ children }) => (
                  </Toolbar>
                  <Menu
                    id="menu-appbar"
-                   transformOrigin={{ vertical: "top", horizontal: "center" }}
-                   open={open}
-                   onClose={this.handleClose}
+                   transformOrigin={{ vertical: "top", horizontal: "center" }}              
                    className={props.classes.menu}
                  >
                  <MenuItem onClick={this.handleClose}>Profile</MenuItem>
